@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- '6'
+script: unitTest
+deploy:
+  provider: heroku
+  api_key:
+    secure: FemRXMCkMSaG9LZOygWq24mR1CAwgcCjgUvyCNjgwF1fflUZS+UMsB92EGeBAOF2iCvMYQ9IEudqVvgmA+uZ80+qshDTDQpTPxd+cDucYMoHJyiNE7aPt8hFnkGc3kj2Whj5mPmpDXNCI3ueO15sEnd0xJvEwN7QI7sa0O3x2u9mhbr64w5x7FJNOpFuqPZmc1I6L3Ajl5nJo//S+HHtJF+3YMzW8xwlHlpN8SgXPyM//Asj6oZNBS7rXyB5AVOMnVeKC8glsZZIwClaiD4U27QJLZuDKL1mZMpW4HDHcFgUsWW7UiMzWvvS9frZyWYfMflnn2FGYlQgq9sl0suMN+lWLd88aZYaagm9JVt2fUu0ASJSQm4cfTUDg163hZYn6GgFMf5YQKYllz9m3Cx7UXHZnYmrt0pQn/A/zX8DBkQX40YlNy4j2djbP9v2+zhSWV6Ev6UmghyAn4u8AZjkYPpl13m+61iH6MrMtKQfO/dHy0OohNyRmu3HlF3DDf5y/AUoVTYlaJ0+hdZ4z0uaR7l7fh8BdCDNxFnXKK3iX1wQqIsbSTrStGMmbQKX1bX6qlhwkCNOiRzFfJ8JjGG323ibfiBnN0uhGClPtg5nBdwtRuFEotHRzhZCaYTmcSVpDJ8gLLVIMNG8320GAXKGbcsV15X8Mm2SGRRf7qRwnyc=
+  app: vue-practice
+  on:
+    repo: c1wei/vue-practice
