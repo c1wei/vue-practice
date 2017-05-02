@@ -3,8 +3,11 @@ node_js:
 - '6'
 before_install:
 - gem update --system 1.8.30
+- export PATH="$PATH:$HOME/.rvm/bin"
 script: 
 - npm run unit
+before_deploy:
+  - export PATH="$PATH:$HOME/.rvm/bin"
 deploy:
   provider: heroku
   api_key:
