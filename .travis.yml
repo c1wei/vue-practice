@@ -1,11 +1,6 @@
 language: node_js
 node_js:
 - '6'
-before_script:
-  - sudo apt-get install curl
-  - rvm reinstall 1.9.3 --disable-binary
-script: 
-- npm run unit
 deploy:
   provider: heroku
   api_key:
